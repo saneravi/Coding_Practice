@@ -1,0 +1,29 @@
+The first thing to be done is the creation of a new repository on GitHub.
+
+Click Create Repository and GitHub will do it's thing. The address of the new repository will be:
+https://github.com/USER/PROJECTNAME.git​
+
+On your local machine, create a new project folder. Go to the folder, open terminal.
+
+Initialize the repository with the command:
+git init
+
+Now let's create a readme file with the command:
+touch readme.txt
+
+Add the new file to the staging area with the command:
+git add .
+
+To create the commit, issue the command:
+git commit -m "added readme"
+
+You can change the text in quotes to be whatever you want, such as "my first commit." Make sure the text in quotes describes what's been done for the commit.
+
+The next step will make use of the GitHub repository address. What we need to do is add the local repository to the origin (the name of the remote repository where you want to publish your commits) of the remote repository. This is done with the command:
+
+git remote add origin https://github.com/USER/PROJECTNAME.git
+
+At this point you can then push your work to the remote with the command:
+
+git push -u origin master
+
