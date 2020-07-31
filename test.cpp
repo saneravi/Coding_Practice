@@ -24,11 +24,14 @@ int main()
 } 
 void solve() 
 { 
-	vector <int> a;
-   for(int i=0; i<10; ++i)
-      a.push_back(i);
+	queue <int> a;
+   for(int i=10; i<25; ++i)
+      a.push(i);
 
-   for(int i=0; i<10; ++i)
-      cout << a[i] <<"\t";
+   while(!a.empty())
+   {      
+      cout << a.front() <<"\t";
+      a.pop();
+   }
 } 
    
