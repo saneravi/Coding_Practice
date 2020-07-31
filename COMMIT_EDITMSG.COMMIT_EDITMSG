@@ -1,0 +1,36 @@
+"From Sublime"
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/error.txt b/error.txt
+index f7bff31..c57da1f 100644
+--- a/error.txt
++++ b/error.txt
+@@ -1 +1 @@
+-time taken : 0.0018 secs
++time taken : 0.001413 secs
+diff --git a/input.txt b/input.txt
+index 56a6051..d8263ee 100644
+--- a/input.txt
++++ b/input.txt
+@@ -1 +1 @@
+-1
+\ No newline at end of file
++2
+\ No newline at end of file
+diff --git a/name.txt b/name.txt
+new file mode 100644
+index 0000000..eec2996
+--- /dev/null
++++ b/name.txt
+@@ -0,0 +1 @@
++#include<b
+\ No newline at end of file
+diff --git a/output.txt b/output.txt
+index 87d1fda..80c9c05 100644
+--- a/output.txt
++++ b/output.txt
+@@ -1 +1,2 @@
+ 0	1	2	3	4	5	6	7	8	9	
++0	1	2	3	4	5	6	7	8	9

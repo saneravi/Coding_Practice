@@ -1,2 +1,16 @@
-0	1	2	3	4	5	6	7	8	9	
-0	1	2	3	4	5	6	7	8	9	
+W	R	B	Q	H	
+A	Z	W	K	H	D	Q	
+D	R	M	
+F	X	J	
+L	B	F	A	C	
+N	
+D	G	X	P	L	R	L	
+M	A	Q	W	H	
+K	C	Q	N	N	
+E	H	Q	G	B	
+C	J	I	S	
+D	
+T	X	X	
+T	R	
+J	T	S	F	Z	F	M	F	
+
