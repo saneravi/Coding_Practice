@@ -23,7 +23,7 @@ int main()
    while(t--) 
    { 
       solve(); 
-      cout<<"\n"; 
+      cout<<"\n\n\n"; 
    } 
    
    cerr<<"time taken : "<<(float)clock()/CLOCKS_PER_SEC<<" secs"<<endl; 
@@ -32,39 +32,36 @@ int main()
 
 void solve() 
 {
-   vector <int> a; int n, x, summ=0, ans=0;
-   cin>>n;
-   a.push_back(0);
-   for(int i=1; i<=n; ++i)
+   vector <int> A;
+   int n;
+   cin >> n;
+   for(int i=0; i<n; ++i)
    {
-      cin>>x;
-      a.push_back(x + a[i-1]);      
-   }   
-   
-
-   if(!a[n]%3)
-   {  
-      summ = a[n]/3;
-      int count=0;
-      for(int j=1; j< n; ++j)
-      {         
-         if(a[j] == 2*summ)
-         {
-            ans += count;
-         }
-
-         if(a[j] == summ)
-         {
-            count++;
-         } 
-
-      }
-
-
-
-
+      //cin>>x;
+      A.push_back(rand()%20);
+      cout<<A[i]<<"\t";
    }
-   cout<<ans;
+   cout << endl<<endl;
+
+   for(int i=1; i<n; ++i)
+   {
+      int key = A[i];
+      int j = i-1;
+
+      while(j>=0 && A[j]>key)
+      {
+         A[j+1] = A[j];
+         j--;
+      }
+      A[j+1] = key;
+   }
+
+
+
+   
+   for(int i=0; i<n; ++i)
+      cout<<A[i]<<"\t";
+
 
 }
 

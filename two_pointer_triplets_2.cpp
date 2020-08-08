@@ -32,39 +32,39 @@ int main()
 
 void solve() 
 {
-   vector <int> a; int n, x, summ=0, ans=0;
-   cin>>n;
-   a.push_back(0);
-   for(int i=1; i<=n; ++i)
+   vector <int> A, B;
+   int n, x;
+   cin >> n;
+   for(int i=0; i<n; ++i)
    {
-      cin>>x;
-      a.push_back(x + a[i-1]);      
-   }   
-   
-
-   if(!a[n]%3)
-   {  
-      summ = a[n]/3;
-      int count=0;
-      for(int j=1; j< n; ++j)
-      {         
-         if(a[j] == 2*summ)
-         {
-            ans += count;
-         }
-
-         if(a[j] == summ)
-         {
-            count++;
-         } 
-
-      }
-
-
-
-
+      //cin>>x;
+      A.push_back(rand()%20-10);
+      cout<<A[i]<<"\t";
    }
-   cout<<ans;
+   cout << endl<<endl;
+
+   sort(A.begin(), A.end());
+   int flag=0;
+   for(int i =0; i<n-1; ++i)
+   {
+      int l=i+1, r=n-1;
+      while(l<r)
+      {
+         if(A[i]==A[l]+A[r])
+         {
+            cout << A[i] << "\t=\t"<< A[l]<<"\t+\t"<< A[r]<<"\n";
+            l++;
+            r--;
+            flag = 1;
+         }
+         else if(A[i]>A[l]+A[r])
+            l++;
+         else
+            r--;
+      }
+   }
+   if(!flag)
+      cout<<"No triplet\n\n";
 
 }
 

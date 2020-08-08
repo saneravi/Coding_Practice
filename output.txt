@@ -1,16 +1,8 @@
-W	R	B	Q	H	
-A	Z	W	K	H	D	Q	
-D	R	M	
-F	X	J	
-L	B	F	A	C	
-N	
-D	G	X	P	L	R	L	
-M	A	Q	W	H	
-K	C	Q	N	N	
-E	H	Q	G	B	
-C	J	I	S	
-D	
-T	X	X	
-T	R	
-J	T	S	F	Z	F	M	F	
+Input Array: 
+83	86	77	15	93	35	86	92	49	21	
+
+Sorted Array:
+15	21	35	49	77	83	86	86	92	93	
+
+
 
