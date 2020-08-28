@@ -1,3 +1,37 @@
+Create SSH keys on Linux using ssh-keygen
+
+First of all, let’s have a look at creating SSH keys on Linux operating systems.
+To create SSH keys on Linux, use the ssh-keygen command with a RSA algorithm:;;
+
+cd ~/.ssh/ && ssh-keygen -t rsa -b 4096 -C "email@example.com"
+
+Enter file in which to save the key (/home/schkn/.ssh/id_rsa): "custom_id_rsa"
+Enter passphrase (empty for no passphrase): "......."
+Enter same passphrase again: ".............."
+
+Configure your SSH keys
+
+sudo nano ~/.ssh/config
+
+Host *
+    Hostname github.com
+    User git
+    IdentityFile ~/.ssh/"custom_id_rsa"
+
+Add SSH key to your GitHub Account
+In order to add a SSH key to your GitHub account, head over to the settings of your account and select the “SSH and GPG keys” option in the left menu. click on the “New SSH key” button in order to create a new SSH key for Github.
+
+To get the content of your public key on Linux, use the cat command on your public key file.
+
+cat ~/.ssh/"custom_id_rsa".pub
+
+Paste the content of your public key to the dedicated key text area on GitHub.
+Click on “Add SSH key” in order to complete the process.
+Congratulations, you have successfully added your SSH keys to GitHub.
+
+
+PART 2
+
 The first thing to be done is the creation of a new repository on GitHub.
 
 Click Create Repository and GitHub will do it's thing. The address of the new repository will be:
