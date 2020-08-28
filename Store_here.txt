@@ -1,0 +1,35 @@
+School Name: K V EME School
+Class: 12
+Roll No: 1
+Name: Ravi
+Marks: 81
+Grade: A
+
+School Name: K V EME School
+Class: 12
+Roll No: 2
+Name: Rohan
+Marks: 85
+Grade: A
+
+School Name: Sofia School
+Class: 10
+Roll No: 3
+Name: Jay V
+Marks: 75
+Grade: B
+
+School Name: Vidya Vihar School
+Class: 11
+Roll No: 4
+Name: Radhika
+Marks: 70
+Grade: B
+
+School Name: K V EME School
+Class: 12
+Roll No: 5
+Name: Ajitem
+Marks: 78
+Grade: B
+
